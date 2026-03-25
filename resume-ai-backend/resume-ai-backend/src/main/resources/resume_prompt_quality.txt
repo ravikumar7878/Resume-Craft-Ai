@@ -1,0 +1,42 @@
+Generate a professional IT job resume strictly in JSON format.
+
+IMPORTANT RULES:
+- Return ONLY valid JSON
+- Do NOT include <think>, explanations, comments, or extra text
+- Do NOT wrap output in ```json or ``` blocks
+- Do NOT skip any key
+- Maintain the exact structure and hierarchy
+- If any value is missing, use "" or null
+- All lists/arrays must be present even if empty
+
+Input Description:
+"{{userDescription}}"
+
+JSON Structure Requirements (quality fields only):
+
+{
+  "experience": [
+    {
+      "jobTitle": "",
+      "company": "",
+      "location": "",
+      "duration": "",
+      "responsibility": ""
+    }
+  ],
+  "projects": [
+    {
+      "title": "",
+      "description": "",
+      "technologiesUsed": [],
+      "githubLink": null
+    }
+  ],
+  "achievements": [
+    {
+      "title": "",
+      "year": "",
+      "extraInformation": ""
+    }
+  ]
+}
